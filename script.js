@@ -722,20 +722,22 @@ function createProjectCard(p) {
   const card = document.createElement("article");
   card.className = "card fade-in";
   card.setAttribute("data-tags", p.tags.join(" "));
+
   const description =
     p.desc.length > 120 ? p.desc.substring(0, 120) + "..." : p.desc;
+
   const imgSrc =
     p.image ||
     'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300"><rect width="100%" height="100%" fill="%23e6e9ee"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="24" fill="%23999">No Image</text></svg>';
+
   card.innerHTML =
     '<div class="proj-image-wrap"><img class="proj-image" src="' +
     imgSrc +
     '" alt="' +
     p.title +
     ' image" loading="lazy" /></div>' +
-    '<div class="meta"><div class="tag">' +
-    (p.tags[0] || "Project") +
-    "</div>" +
+    '<div class="meta">' +
+    // REMOVE TAG LABEL COMPLETELY
     (p.stars > 0
       ? '<div class="star-count"><i class="fas fa-star"></i> ' +
         p.stars +
@@ -744,9 +746,11 @@ function createProjectCard(p) {
     "</div>" +
     '<div class="proj-title">' +
     p.title +
-    "</div><p>" +
+    "</div>" +
+    "<p>" +
     description +
-    '</p><div class="actions">' +
+    "</p>" +
+    '<div class="actions">' +
     (p.live !== "#"
       ? '<a class="link" href="' +
         p.live +
@@ -756,8 +760,10 @@ function createProjectCard(p) {
     p.repo +
     '" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> <span>View Code</span></a>' +
     "</div>";
+
   return card;
 }
+
 
 function renderProjects(projects) {
   const gridElement = el("#projectsGrid");
@@ -919,4 +925,5 @@ appendInlineStyle(
 );
 
 // End of script.js
+
 
