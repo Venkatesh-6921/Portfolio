@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M V Reddy Portfolio</title>
+  <meta name="description" content="Portfolio showcasing web development and software projects.">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Spline (optional) -->
+  <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.10/build/spline-viewer.js"></script> -->
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%233776AB;stop-opacity:1' /><stop offset='100%' style='stop-color:%23FFD43B;stop-opacity:1' /></linearGradient></defs><rect width='100' height='100' fill='url(%23grad)' rx='12'/><text x='50' y='68' font-family='Fira Code, monospace' font-size='38' font-weight='bold' text-anchor='middle' fill='white'>Py</text></svg>">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">M V Reddy Portfolio</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="mobile-toggle" id="mobileToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="section hero" id="home">
+    <div class="section-content">
+      <div class="hero-content">
+        <div class="hi">👋 Hi there, I'm Maragada Venkateswara Reddy</div>
+        
+        <!-- GitHub-style Typing Animation -->
+        <div class="typing-container">
+          <div class="typing-animation">
+            <div class="typing-line">Venkatesh Maragada<span class="cursor"></span></div>
+            <div class="typing-line">Python Developer<span class="cursor"></span></div>
+            <div class="typing-line">Web Developer<span class="cursor"></span></div>
+            <div class="typing-line">ML Enthusiast<span class="cursor"></span></div>
+          </div>
+        </div>
+        
+        <p class="lead">A passionate developer creating modern applications with clean code and intuitive user experiences.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View My Work</a>
+          <a href="#contact" class="btn secondary">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="section-content">
+      <div class="about-content">
+        <div class="about-text slide-in-left">
+          <h2>About Me</h2>
+          <p>I'm a passionate developer with experience creating modern applications. My expertise spans Python development, web applications, and creating intuitive user experiences.</p>
+          <p>When I'm not coding, I enjoy exploring new technologies and working on personal projects that solve real-world problems.</p>
+          <a href="#contact" class="btn primary" style="margin-top: 20px;">Get In Touch</a>
+        </div>
+        <div class="about-image slide-in-right">
+          <div class="profile-picture">
+            <img src="Images/profile.jpeg" alt="Maragada Venkateswara Reddy"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="section-content">
+      <div class="projects-header">
+        <h2 class="section-title fade-in">My Projects</h2>
+        <div class="filters" id="filters">
+          <!-- Filters will be populated by JavaScript -->
+        </div>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <div class="loading">
+          <div class="spinner"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="section-content">
+      <div class="skills-content">
+        <div class="skills-visual slide-in-left">
+          <div class="skills-chart">
+            <div class="skill-bar">
+              <div class="skill-name">
+                <span>Python</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-name">
+                <span>HTML/CSS</span>
+                <span>76%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" style="width: 76%"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-name">
+                <span>JavaScript</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-name">
+                <span>Django/Flask</span>
+                <span>89%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" style="width: 89%"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-name">
+                <span>Bootstrap/UI</span>
+                <span>55%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" style="width: 55%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-text slide-in-right">
+          <h2 class="section-title">Skills & Expertise</h2>
+          <div class="skills-list" id="skillsList">
+            <div class="loading">
+              <div class="spinner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="section-content">
+      <h2 class="section-title fade-in" style="text-align: center; margin-bottom: 40px;">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info slide-in-left">
+          <h3>Contact Information</h3>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">maragadavekatesh@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value">India</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-calendar-alt"></i>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Availability</span>
+                <span class="contact-item-value">Open for new projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Venkatesh-6921" class="social-link" aria-label="GitHub" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form slide-in-right">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="section-content">
+      <p>Built with care • © <span id="year"></span> M V Reddy</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="script.js"></script>
+</body>
+</html>
