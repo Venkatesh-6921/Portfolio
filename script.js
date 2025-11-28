@@ -464,13 +464,22 @@ async function fetchGitHubData() {
     console.log("[fetchGitHubData] received", repos.length, "repositories");
 
     const lowerUsername = username.toLowerCase();
-    const projects = repos
-      .filter((repo) => {
-        if (!repo || !repo.name) return false;
-        const lname = repo.name.toLowerCase();
-        if (lname === lowerUsername || lname.includes(lowerUsername))
-          return false;
-        return !repo.fork;
+   const projects = repos
+   .filter((repo) => {
+     if (!repo || !repo.name) return false;
+
+     const lname = repo.name.toLowerCase();
+
+     // Exclude forked repos
+     if (repo.fork) return false;
+
+     // Exclude repos matching your username
+     if (lname === lowerUsername || lname.includes(lowerUsername)) return false;
+
+     // Exclude anything containing "portfolio"
+     if (lname.includes("portfolio")) return false;
+
+     return true;
       })
       .map((repo) => {
         const tags = extractTagsFromRepo(repo);
@@ -910,3 +919,4 @@ appendInlineStyle(
 );
 
 // End of script.js
+
