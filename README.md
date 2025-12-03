@@ -68,7 +68,7 @@ Portfolio/
 
 ---
 
-##🚀 Deployment Options
+## 🚀 Deployment Options
 
 You can deploy this portfolio on:
 
@@ -80,7 +80,7 @@ GitHub Pages
 
 ---
 
-##📌 Suggestions for Future Improvements
+## 📌 Suggestions for Future Improvements
 
 Add SEO metadata for better search visibility
 
