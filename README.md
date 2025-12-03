@@ -16,11 +16,23 @@ https://maragada-venkatesh-portfolio.vercel.app/
 ## 📂 Project Structure
 
 Portfolio/
-│── index.html  # Main webpage
-│── style.css   # Styles and theme variables
-│── script.js   # Interactions, theme toggle, animations
-│── images/     # Icons, thumbnails, screenshots
-│── README.md
+│
+├── index.html                     # Main homepage
+├── style.css                      # Global styles, theme variables
+├── script.js                      # Interactions, animations, theme toggle
+│
+├── sitemap.xml                    # SEO sitemap for Google indexing
+├── robots.txt                     # Crawling rules for search engines
+├── manifest.json                  # App manifest (mobile PWA icons)
+│
+├── images/                        # Branding & preview images
+│   ├── screenshot.png             # Screenshot for README
+│   ├── profile.jpeg               # Profile Picture
+│
+├── LICENSE                        # MIT License
+├── .gitignore                     # Ignore logs, cache, node_modules
+└── README.md                      # Documentation
+
 
 
 ---
