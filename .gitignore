@@ -1,0 +1,26 @@
+# Node modules (if you add build tools later)
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build folders (optional)
+dist/
+build/
+
+# Vercel or Netlify
+.vercel/
+.netlify/
+
+# Backup or temp files
+*.tmp
+*.bak
+*.swp
+*.swo
