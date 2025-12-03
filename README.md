@@ -14,6 +14,7 @@ https://maragada-venkatesh-portfolio.vercel.app/
 ---
 
 ## 📂 Project Structure
+```
 Portfolio/
 │
 ├── index.html                # Main homepage
@@ -32,7 +33,7 @@ Portfolio/
 ├── LICENSE                   # MIT License
 ├── .gitignore                # Ignore unnecessary files
 └── README.md                 # Documentation
-
+```
 
 
 
