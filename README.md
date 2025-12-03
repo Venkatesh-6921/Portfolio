@@ -14,7 +14,7 @@ https://maragada-venkatesh-portfolio.vercel.app/
 ---
 
 ## 📂 Project Structure
- Portfolio/
+Portfolio/
 │
 ├── index.html                # Main homepage
 ├── style.css                 # Global styles, theme variables
